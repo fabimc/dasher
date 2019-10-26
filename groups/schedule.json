@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "schedule",
+    "description": "Publish date and expiration date"
+  },
+  "connection": "default",
+  "collectionName": "groups_schedules",
+  "attributes": {
+    "publish_date": {
+      "type": "date"
+    },
+    "expiration_date": {
+      "type": "date"
+    }
+  }
+}

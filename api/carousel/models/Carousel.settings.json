@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "carousels",
+  "info": {
+    "name": "carousel",
+    "description": "Rotators"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "schedule": {
+      "group": "schedule",
+      "type": "group"
+    }
+  }
+}
