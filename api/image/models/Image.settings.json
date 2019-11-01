@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "images",
+  "info": {
+    "name": "image",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "file": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "section": {
+      "enum": [
+        "home"
+      ],
+      "type": "enumeration"
+    },
+    "schedule": {
+      "group": "schedule",
+      "type": "group"
+    }
+  }
+}

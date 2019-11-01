@@ -10021,6 +10021,12 @@ strapi-provider-email-sendmail@3.0.0-beta.16.8:
     lodash "^4.17.11"
     sendmail "^1.2.0"
 
+"strapi-provider-upload-ftp-bol@file:providers/strapi-provider-upload-ftp-bol":
+  version "3.0.0-alpha.25.2"
+  dependencies:
+    ftp "^0.3.10"
+    request "^2.88.0"
+
 strapi-provider-upload-ftp@^3.0.0-alpha.25.2:
   version "3.0.0-alpha.25.2"
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-ftp/-/strapi-provider-upload-ftp-3.0.0-alpha.25.2.tgz#b5ebf61b4182b7eff9499bdc8c0a9c491ee4186e"
