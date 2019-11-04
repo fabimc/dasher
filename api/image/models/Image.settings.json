@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -22,7 +25,8 @@
     },
     "section": {
       "enum": [
-        "home"
+        "home",
+        "casino"
       ],
       "type": "enumeration"
     },

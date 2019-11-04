@@ -9,32 +9,37 @@ module.exports = {
   auth: {
     host: {
       label: "Host",
-      type: "text",
+      type: "text"
     },
     port: {
       label: "Port",
-      type: "text",
+      type: "text"
     },
     user: {
       label: "User",
-      type: "text",
+      type: "text"
     },
     password: {
       label: "Password",
-      type: "password",
+      type: "password"
     },
     baseUrl: {
       label: "Base URL",
-      type: "text",
+      type: "text"
     },
+    basePath: {
+      label: "Base Path",
+      type: "text"
+    }
     // secure: {
     //   label: "Secure",
     //   type: "checkbox",
     //   required: false,
     // },
   },
-  init: (config) => {
-    const { host, port, user, password, baseUrl } = config;
+  init: config => {
+    console.log("initing");
+    const { host, port, user, password, baseUrl, basePath } = config;
 
     const ftp = new FTP();
 
@@ -42,7 +47,7 @@ module.exports = {
       host,
       port,
       user,
-      password,
+      password
     });
 
     const connection = new Promise((resolve, reject) => {
@@ -50,7 +55,7 @@ module.exports = {
         resolve();
       });
 
-      ftp.on("error", (err) => {
+      ftp.on("error", err => {
         reject(err);
       });
     });
@@ -76,7 +81,9 @@ module.exports = {
                 fileName = `${originalFileName}(${c})${file.ext}`;
               }
 
-              ftp.append(file.buffer, `/www/img/mkt/${fileName}`, (err) => {
+              const path = basePath ? basePath : "/www/img/mkt";
+
+              ftp.append(file.buffer, `${path}/${fileName}`, err => {
                 if (err) {
                   return reject(err);
                 }
@@ -94,7 +101,7 @@ module.exports = {
       delete(file) {
         return new Promise((resolve, reject) => {
           connection.then(() => {
-            ftp.delete(file.public_id, (err) => {
+            ftp.delete(file.public_id, err => {
               if (err) {
                 return reject(err);
               }
@@ -105,7 +112,7 @@ module.exports = {
             });
           });
         });
-      },
+      }
     };
-  },
+  }
 };
