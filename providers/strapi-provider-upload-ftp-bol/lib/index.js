@@ -38,7 +38,6 @@ module.exports = {
     // },
   },
   init: config => {
-    console.log("initing");
     const { host, port, user, password, baseUrl, basePath } = config;
 
     const ftp = new FTP();

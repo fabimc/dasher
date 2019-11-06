@@ -33,6 +33,9 @@
     "schedule": {
       "group": "schedule",
       "type": "group"
+    },
+    "mobile": {
+      "type": "boolean"
     }
   }
 }
