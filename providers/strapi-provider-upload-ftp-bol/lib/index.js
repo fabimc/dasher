@@ -80,20 +80,13 @@ module.exports = {
                 fileName = `${originalFileName}(${c})${file.ext}`;
               }
 
-              // we get the folder name using the _ character
-              const folderPath =
-                file.name.split("_").length > 1
-                  ? `${file.name.split("_")[0]}/`
-                  : "";
-              const path = basePath ? basePath : "/www/img/mkt";
-
-              ftp.append(file.buffer, `${path}/${folderPath}${fileName}`, err => {
+              ftp.append(file.buffer, `${basePath}${fileName}`, err => {
                 if (err) {
                   return reject(err);
                 }
 
                 file.public_id = fileName;
-                file.url = baseUrl + folderPath + fileName;
+                file.url = baseUrl + fileName;
                 ftp.end();
 
                 return resolve();

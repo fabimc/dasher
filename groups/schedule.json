@@ -6,10 +6,10 @@
   "connection": "default",
   "collectionName": "groups_schedules",
   "attributes": {
-    "publish_date": {
+    "start": {
       "type": "date"
     },
-    "expiration_date": {
+    "end": {
       "type": "date"
     }
   }
