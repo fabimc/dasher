@@ -17,10 +17,6 @@
     "title": {
       "type": "string"
     },
-    "schedule": {
-      "group": "schedule",
-      "type": "group"
-    },
     "description": {
       "type": "text"
     },
@@ -37,6 +33,12 @@
     },
     "images": {
       "collection": "image"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
     }
   }
 }
