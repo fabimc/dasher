@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Rotator` model.
+ * Lifecycle callbacks for the `Campaign` model.
  */
 
 module.exports = {

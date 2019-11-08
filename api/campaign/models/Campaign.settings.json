@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "rotators",
   "info": {
-    "name": "rotator",
+    "name": "campaign",
     "description": ""
   },
   "options": {
@@ -21,9 +21,6 @@
       "group": "schedule",
       "type": "group"
     },
-    "images": {
-      "collection": "image"
-    },
     "description": {
       "type": "text"
     },
@@ -34,6 +31,12 @@
         "sports"
       ],
       "type": "enumeration"
+    },
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "image"
     }
   }
 }
