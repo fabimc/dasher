@@ -26,15 +26,6 @@
     "description": {
       "type": "text"
     },
-    "type": {
-      "enum": [
-        "all",
-        "desktop",
-        "mobile",
-        "tablet"
-      ],
-      "type": "enumeration"
-    },
     "name": {
       "type": "string"
     }

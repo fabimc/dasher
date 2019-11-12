@@ -31,14 +31,22 @@
     "name": {
       "type": "string"
     },
-    "images": {
-      "collection": "image"
-    },
     "start": {
       "type": "date"
     },
     "end": {
       "type": "date"
+    },
+    "images": {
+      "collection": "image"
+    },
+    "state": {
+      "enum": [
+        "default",
+        "login",
+        "logout"
+      ],
+      "type": "enumeration"
     }
   }
 }
