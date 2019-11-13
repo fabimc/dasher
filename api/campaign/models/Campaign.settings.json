@@ -37,9 +37,6 @@
     "end": {
       "type": "date"
     },
-    "images": {
-      "collection": "image"
-    },
     "state": {
       "enum": [
         "default",
@@ -47,6 +44,15 @@
         "logout"
       ],
       "type": "enumeration"
+    },
+    "images_desktop": {
+      "collection": "image"
+    },
+    "images_mobile": {
+      "collection": "image"
+    },
+    "images_tablets": {
+      "collection": "image"
     }
   }
 }
