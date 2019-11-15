@@ -43,7 +43,7 @@ const getDisplayedValue = (type, value, name) => {
       return moment
         .parseZone(date)
         .utc()
-        .format('MMM DD YYYY, hh-mm-ss');
+        .format('dddd, MMMM Do YYYY');
     }
     case 'password':
       return '••••••••';

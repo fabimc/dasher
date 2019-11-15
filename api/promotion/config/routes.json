@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/campaigns",
-      "handler": "Campaign.find",
+      "path": "/promotions",
+      "handler": "Promotion.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/campaigns/count",
-      "handler": "Campaign.count",
+      "path": "/promotions/count",
+      "handler": "Promotion.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/campaigns/:id",
-      "handler": "Campaign.findOne",
+      "path": "/promotions/:id",
+      "handler": "Promotion.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/campaigns",
-      "handler": "Campaign.create",
+      "path": "/promotions",
+      "handler": "Promotion.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/campaigns/:id",
-      "handler": "Campaign.update",
+      "path": "/promotions/:id",
+      "handler": "Promotion.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/campaigns/:id",
-      "handler": "Campaign.delete",
+      "path": "/promotions/:id",
+      "handler": "Promotion.delete",
       "config": {
         "policies": []
       }

@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "rotators",
+  "collectionName": "promotions",
   "info": {
-    "name": "campaign",
+    "name": "promotion",
     "description": ""
   },
   "options": {
@@ -39,7 +39,7 @@
     },
     "state": {
       "enum": [
-        "default",
+        "guest",
         "login",
         "logout"
       ],
@@ -53,6 +53,18 @@
     },
     "images_tablets": {
       "collection": "image"
+    },
+    "campaign": {
+      "enum": [
+        "default",
+        "halloween",
+        "thanksgiving",
+        "christmas"
+      ],
+      "type": "enumeration"
+    },
+    "default": {
+      "type": "boolean"
     }
   }
 }

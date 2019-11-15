@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Campaign` model.
+ * Lifecycle callbacks for the `Promotion` model.
  */
 
 module.exports = {
