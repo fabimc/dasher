@@ -51,20 +51,14 @@
     "images_mobile": {
       "collection": "image"
     },
-    "images_tablets": {
+    "images_tablet": {
       "collection": "image"
-    },
-    "campaign": {
-      "enum": [
-        "default",
-        "halloween",
-        "thanksgiving",
-        "christmas"
-      ],
-      "type": "enumeration"
     },
     "default": {
       "type": "boolean"
+    },
+    "campaign": {
+      "type": "string"
     }
   }
 }
