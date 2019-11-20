@@ -53,6 +53,9 @@
     },
     "images_tablet": {
       "collection": "image"
+    },
+    "isDefault": {
+      "type": "boolean"
     }
   }
 }
