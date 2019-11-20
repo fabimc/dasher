@@ -53,12 +53,6 @@
     },
     "images_tablet": {
       "collection": "image"
-    },
-    "default": {
-      "type": "boolean"
-    },
-    "campaign": {
-      "type": "string"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rotators",
+      "handler": "Rotator.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rotators/count",
+      "handler": "Rotator.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rotators/:id",
+      "handler": "Rotator.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rotators",
+      "handler": "Rotator.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rotators/:id",
+      "handler": "Rotator.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rotators/:id",
+      "handler": "Rotator.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

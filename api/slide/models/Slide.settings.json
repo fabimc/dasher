@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "slides",
+  "info": {
+    "name": "slide",
+    "description": "Rotator's slide"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "image": {
+      "model": "image"
+    }
+  }
+}
