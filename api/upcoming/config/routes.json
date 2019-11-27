@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/upcomings",
+      "handler": "Upcoming.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upcomings/count",
+      "handler": "Upcoming.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upcomings/:id",
+      "handler": "Upcoming.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/upcomings",
+      "handler": "Upcoming.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/upcomings/:id",
+      "handler": "Upcoming.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/upcomings/:id",
+      "handler": "Upcoming.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

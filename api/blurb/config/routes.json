@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blurbs",
+      "handler": "Blurb.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blurbs/count",
+      "handler": "Blurb.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blurbs/:id",
+      "handler": "Blurb.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blurbs",
+      "handler": "Blurb.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blurbs/:id",
+      "handler": "Blurb.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blurbs/:id",
+      "handler": "Blurb.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

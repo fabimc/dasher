@@ -17,13 +17,10 @@
     "name": {
       "type": "string"
     },
-    "title": {
+    "alt": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
-    "cta": {
+    "ctaLogin": {
       "type": "string"
     },
     "start": {
@@ -32,8 +29,34 @@
     "end": {
       "type": "date"
     },
-    "image": {
-      "model": "image"
+    "CtaLogout": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "min": 1,
+      "required": true,
+      "unique": true
+    },
+    "desktopLogin": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "desktopLogout": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "mobileLogin": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "mobileLogout": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }

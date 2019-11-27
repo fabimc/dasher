@@ -7,18 +7,21 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
     "name": {
       "type": "string"
     },
-    "title": {
-      "type": "string"
+    "start": {
+      "type": "date"
     },
-    "description": {
-      "type": "text"
+    "end": {
+      "type": "date"
     },
     "slides": {
       "collection": "slide"
