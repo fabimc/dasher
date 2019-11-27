@@ -53,6 +53,12 @@
     },
     "end": {
       "type": "date"
+    },
+    "sequence": {
+      "type": "integer",
+      "default": "1",
+      "min": 1,
+      "required": true
     }
   }
 }

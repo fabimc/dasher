@@ -45,6 +45,12 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "sequence": {
+      "type": "integer",
+      "min": 1,
+      "default": "1",
+      "required": true
     }
   }
 }
