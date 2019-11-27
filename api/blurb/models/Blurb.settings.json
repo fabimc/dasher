@@ -48,12 +48,6 @@
     "buttonCtaLogout": {
       "type": "string"
     },
-    "order": {
-      "type": "integer",
-      "min": 1,
-      "required": true,
-      "default": "1"
-    },
     "start": {
       "type": "date"
     },

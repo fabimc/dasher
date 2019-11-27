@@ -32,12 +32,6 @@
     "CtaLogout": {
       "type": "string"
     },
-    "order": {
-      "type": "integer",
-      "min": 1,
-      "required": true,
-      "default": "1"
-    },
     "desktopLogin": {
       "model": "file",
       "via": "related",
