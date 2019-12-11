@@ -51,6 +51,14 @@
       "min": 1,
       "default": "1",
       "required": true
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "published",
+        "archived"
+      ],
+      "type": "enumeration"
     }
   }
 }

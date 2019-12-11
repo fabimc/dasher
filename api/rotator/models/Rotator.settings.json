@@ -23,6 +23,14 @@
     "end": {
       "type": "date"
     },
+    "status": {
+      "enum": [
+        "draft",
+        "published",
+        "archived"
+      ],
+      "type": "enumeration"
+    },
     "slides": {
       "collection": "slide"
     }

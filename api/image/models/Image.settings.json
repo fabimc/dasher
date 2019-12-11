@@ -28,6 +28,14 @@
     },
     "name": {
       "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "published",
+        "archived"
+      ],
+      "type": "enumeration"
     }
   }
 }
