@@ -20,7 +20,7 @@
     "alt": {
       "type": "string"
     },
-    "ctaLogin": {
+    "cta_login": {
       "type": "string"
     },
     "start": {
@@ -29,25 +29,25 @@
     "end": {
       "type": "date"
     },
-    "CtaLogout": {
+    "cta_logout": {
       "type": "string"
     },
-    "desktopLogin": {
+    "desktop_login": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "desktopLogout": {
+    "desktop_logout": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "mobileLogin": {
+    "mobile_login": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "mobileLogout": {
+    "mobile_logout": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
