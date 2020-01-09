@@ -32,26 +32,6 @@
     "cta_logout": {
       "type": "string"
     },
-    "desktop_login": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "desktop_logout": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "mobile_login": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "mobile_logout": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
     "sequence": {
       "type": "integer",
       "min": 1,
@@ -65,6 +45,18 @@
         "archived"
       ],
       "type": "enumeration"
+    },
+    "desktop_login": {
+      "model": "image"
+    },
+    "mobile_login": {
+      "model": "image"
+    },
+    "desktop_logout": {
+      "model": "image"
+    },
+    "mobile_logout": {
+      "model": "image"
     }
   }
 }
