@@ -32,7 +32,7 @@
     "cta_logout": {
       "type": "string"
     },
-    "sequence": {
+    "priority": {
       "type": "integer",
       "min": 1,
       "default": "1",
