@@ -33,6 +33,11 @@
     },
     "slides": {
       "collection": "slide"
+    },
+    "priority": {
+      "type": "integer",
+      "min": 1,
+      "default": "1"
     }
   }
 }

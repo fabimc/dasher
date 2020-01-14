@@ -54,7 +54,7 @@
     "end": {
       "type": "date"
     },
-    "sequence": {
+    "priority": {
       "type": "integer",
       "default": "1",
       "min": 1,

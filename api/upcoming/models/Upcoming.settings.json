@@ -46,7 +46,7 @@
       "via": "related",
       "plugin": "upload"
     },
-    "sequence": {
+    "priority": {
       "type": "integer",
       "min": 1,
       "default": "1",
