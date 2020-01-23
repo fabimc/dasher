@@ -15,5 +15,5 @@ RUN yarn install
 # Bundle app source
 COPY . .
 
-EXPOSE 1336
+EXPOSE 1339
 CMD [ "yarn", "strapi" ]
