@@ -16,4 +16,4 @@ RUN yarn install
 COPY . .
 
 EXPOSE 1339
-CMD [ "yarn", "strapi" ]
+CMD [ "yarn", "develop" ]
