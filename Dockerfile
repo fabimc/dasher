@@ -8,14 +8,15 @@ WORKDIR /usr/src/cms
 # where available (npm@5+)
 COPY package*.json ./
 COPY yarn.lock ./
-COPY providers ./
 
-RUN yarn install
+# RUN yarn install
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # Bundle app source
 COPY . .
+
+RUN yarn install
 
 EXPOSE 1339
 CMD [ "yarn", "develop" ]
