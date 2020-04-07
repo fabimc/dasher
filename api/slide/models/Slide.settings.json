@@ -58,8 +58,9 @@
     "mobile_logout": {
       "model": "image"
     },
-    "rotator": {
-      "model": "rotator"
+    "group": {
+      "default": "default-rotator",
+      "type": "string"
     }
   }
 }
