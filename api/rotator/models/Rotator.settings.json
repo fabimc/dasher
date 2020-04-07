@@ -31,12 +31,6 @@
       ],
       "type": "enumeration"
     },
-    "priority": {
-      "type": "integer",
-      "min": 1,
-      "default": "1",
-      "unique": true
-    },
     "slides": {
       "collection": "slide"
     }

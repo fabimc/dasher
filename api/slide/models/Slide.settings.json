@@ -36,8 +36,7 @@
       "type": "integer",
       "min": 1,
       "default": "1",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "status": {
       "enum": [
@@ -58,6 +57,9 @@
     },
     "mobile_logout": {
       "model": "image"
+    },
+    "rotator": {
+      "model": "rotator"
     }
   }
 }
