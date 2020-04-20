@@ -1,0 +1,18 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "sqlite": {
+        "connector": "strapi-hook-bookshelf",
+        "settings": {
+          "client": "sqlite3",
+          "filename": ".tmp/data.db",
+          "enabled": true
+        },
+        "options": {
+          "useNullAsDefault": true
+        }
+      } 
+    } 
+  }
+}

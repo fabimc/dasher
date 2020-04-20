@@ -8,7 +8,6 @@
     "enabled": false
   },
   "admin": {
-    "path": "/bol",
     "autoOpen": false
   }
 }
