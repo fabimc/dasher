@@ -63,16 +63,16 @@ module.exports = {
       upload(file) {
         return new Promise((resolve, reject) => {
           connection.then(() => {
-            ftp.list((err, list) => {
+            ftp.list(basePath, (err, list) => {
               if (err) {
-                return reject(err);
+                return reject(err); 
               }
 
               const originalFileName = file.name.split(".")[0]; // removing the extension from the name
 
               let fileName = `${originalFileName}${file.ext}`;
               let c = 0;
-
+              
               const compareNames = file => file.name === fileName;
 
               while (list.some(compareNames)) {
