@@ -17,12 +17,6 @@
     "name": {
       "type": "string"
     },
-    "start": {
-      "type": "date"
-    },
-    "end": {
-      "type": "date"
-    },
     "status": {
       "enum": [
         "draft",
