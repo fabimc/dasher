@@ -18,6 +18,9 @@
     "eslint-plugin-react": "^7.14.0"
   },
   "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "knex": "latest",
     "lodash": "^4.17.5",
     "moment": "^2.24.0",
