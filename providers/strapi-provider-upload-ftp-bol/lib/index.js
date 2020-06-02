@@ -96,16 +96,20 @@ module.exports = {
                   .then(outBuffer => {
                     ftp.append(outBuffer, `${basePath}${fileName}`, err => {
                       if (err) {
+                        console.error(err)
                         return reject(err)
                       }
 
                       file.public_id = fileName
                       file.url = baseUrl + fileName
+                      console.log('File uploaded:', fileName)
 
                       ftp.end()
 
                       return resolve()
                     })
+                  }).catch(e => {
+                    console.error(e)
                   })
               } else {
                 ftp.append(file.buffer, `${basePath}${fileName}`, err => {
@@ -115,6 +119,7 @@ module.exports = {
 
                   file.public_id = fileName
                   file.url = baseUrl + fileName
+                  console.log('File uploaded:', fileName)
 
                   ftp.end()
 
@@ -128,15 +133,21 @@ module.exports = {
       delete (file) {
         return new Promise((resolve, reject) => {
           connection.then(() => {
-            ftp.delete(file.public_id, err => {
-              if (err) {
-                return reject(err)
-              }
-
-              ftp.end()
-
-              return resolve()
-            })
+            console.log('File to delete:', file.public_id)
+            const success = ftp.ChangeRemoteDir(basePath)
+            if (success) {
+              ftp.delete(file.public_id, err => {
+                if (err) {
+                  return reject(err)
+                }
+                
+                ftp.end()
+  
+                return resolve()
+              })
+            } else {
+              console.error('Could not change dir to:', basePath)
+            }
           })
         })
       }
