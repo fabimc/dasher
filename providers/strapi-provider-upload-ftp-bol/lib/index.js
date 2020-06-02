@@ -80,7 +80,7 @@ module.exports = {
 
               while (list.some(compareNames)) {
                 c += 1
-                fileName = `${originalFileName}(${c})${file.ext}`
+                fileName = `${originalFileName}_${c}${file.ext}`
               }
 
               if (['.jpg', '.png'].includes(file.ext)) {
