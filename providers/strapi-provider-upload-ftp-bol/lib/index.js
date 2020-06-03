@@ -58,6 +58,7 @@ module.exports = {
       })
 
       ftp.on('error', err => {
+        console.error('FTP error: ', err)
         reject(err)
       })
     })
@@ -131,9 +132,9 @@ module.exports = {
         })
       },
       delete (file) {
+        console.log('File to delete:', file.public_id)
         return new Promise((resolve, reject) => {
           connection.then(() => {
-            console.log('File to delete:', file.public_id)
             const success = ftp.ChangeRemoteDir(basePath)
             if (success) {
               ftp.delete(file.public_id, err => {
