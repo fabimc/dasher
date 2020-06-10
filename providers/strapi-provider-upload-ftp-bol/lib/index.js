@@ -89,7 +89,7 @@ module.exports = {
                   .buffer(file.buffer, {
                     plugins: [
                       imageminMozjpeg({ quality: 50 }),
-                      imageminPngquant({
+                      imageminPngquant({ 
                         quality: [0.6, 0.8]
                       })
                     ]
@@ -103,7 +103,6 @@ module.exports = {
 
                       file.public_id = fileName
                       file.url = baseUrl + fileName
-                      console.log('File uploaded:', fileName)
 
                       ftp.end()
 
@@ -120,7 +119,6 @@ module.exports = {
 
                   file.public_id = fileName
                   file.url = baseUrl + fileName
-                  console.log('File uploaded:', fileName)
 
                   ftp.end()
 
@@ -132,7 +130,6 @@ module.exports = {
         })
       },
       delete (file) {
-        console.log('File to delete:', file.public_id)
         return new Promise((resolve, reject) => {
           connection.then(() => {
             const success = ftp.ChangeRemoteDir(basePath)
